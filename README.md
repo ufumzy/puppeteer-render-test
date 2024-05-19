@@ -6,15 +6,16 @@ Welcome to our Puppeteer Docker setup for seamless web scraping adventures! Whet
 ## 🚀 Quick Start
 
 Getting started is a breeze! Just follow these simple steps:
-```
-1. Clone the Repository:
-   **
-   git clone git@github.com:ufumzy/puppeteer-render-test.git
-   cd puppeteer-web-scraping
-   **
 
-2. **Build the Docker Image:**
+1. Clone the Repository:
    ```
+   git clone git@github.com:ufumzy/puppeteer-render-test.git
+   ```
+   ```
+   cd puppeteer-web-scraping
+   ```
+2. **Build the Docker Image:**
+  
    docker build -t puppeteer-scraping .
    ```
 
