@@ -15,7 +15,7 @@ Getting started is a breeze! Just follow these simple steps:
    cd puppeteer-web-scraping
    ```
 2. **Build the Docker Image:**
-  
+   ```
    docker build -t puppeteer-scraping .
    ```
 
@@ -23,7 +23,7 @@ Getting started is a breeze! Just follow these simple steps:
    ```
    docker run -p 3000:3000 puppeteer-scraping
    ```
-```
+
 4. **Visit the Endpoint:**
    Open your favorite browser and head to [http://localhost:3000/scrape](http://localhost:3000/scrape) to witness the magic!
 
@@ -50,7 +50,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Feel free to tweak and adjust any part of this README to better fit your style and preferences. Happy scraping! 🎉
 
 
-Demo Link: [https://puppeteer-render-wa5k.onrender.com/scrape
+Demo Link: https://puppeteer-render-wa5k.onrender.com/scrape
 
 
 ![scrape](https://github.com/ufumzy/puppeteer-render-test/assets/13329994/add3cbd2-62d0-4c01-a4b8-52168cde95e8)
