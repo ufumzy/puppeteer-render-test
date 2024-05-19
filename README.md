@@ -1,4 +1,4 @@
-```
+
 # 🌟 Puppeteer Web Scraping Docker Environment 🌟
 
 Welcome to our Puppeteer Docker setup for seamless web scraping adventures! Whether you're a seasoned data hunter or just diving into the world of web scraping, this repository has got you covered.
@@ -6,7 +6,7 @@ Welcome to our Puppeteer Docker setup for seamless web scraping adventures! Whet
 ## 🚀 Quick Start
 
 Getting started is a breeze! Just follow these simple steps:
-
+```
 1. Clone the Repository:
    **
    git clone git@github.com:ufumzy/puppeteer-render-test.git
