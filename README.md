@@ -7,11 +7,11 @@ Welcome to our Puppeteer Docker setup for seamless web scraping adventures! Whet
 
 Getting started is a breeze! Just follow these simple steps:
 
-1. **Clone the Repository:**
-   ```
+1. Clone the Repository:
+   **
    git clone git@github.com:ufumzy/puppeteer-render-test.git
    cd puppeteer-web-scraping
-   ```
+   **
 
 2. **Build the Docker Image:**
    ```
@@ -22,7 +22,7 @@ Getting started is a breeze! Just follow these simple steps:
    ```
    docker run -p 3000:3000 puppeteer-scraping
    ```
-
+```
 4. **Visit the Endpoint:**
    Open your favorite browser and head to [http://localhost:3000/scrape](http://localhost:3000/scrape) to witness the magic!
 
@@ -48,10 +48,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Feel free to tweak and adjust any part of this README to better fit your style and preferences. Happy scraping! 🎉
 
-Demo Link: [https://puppeteer-render-wa5k.onrender.com/scrape](https://puppeteer-render-wa5k.onrender.com/scrape)
-```
 
-You can now copy everything within this code block and paste it directly into your GitHub repository's README file. Let me know if you need further assistance!
+Demo Link: [https://puppeteer-render-wa5k.onrender.com/scrape
+
 
 ![scrape](https://github.com/ufumzy/puppeteer-render-test/assets/13329994/add3cbd2-62d0-4c01-a4b8-52168cde95e8)
 
