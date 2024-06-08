@@ -8,5 +8,8 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm ci
 COPY . .
-CMD [ "node", "index.js" ]
 
+# Install puppeteer-extra and required plugins
+RUN npm install puppeteer-extra puppeteer-extra-plugin-stealth puppeteer-extra-plugin-anonymize-ua
+
+CMD [ "node", "index.js" ]
