@@ -10,6 +10,5 @@ RUN npm ci
 COPY . .
 
 # Install puppeteer-extra and required plugins
-RUN npm install puppeteer-extra@^3.1.6 puppeteer-extra-plugin-stealth puppeteer-extra-plugin-anonymize-ua
 
 CMD [ "node", "index.js" ]
