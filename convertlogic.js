@@ -1,6 +1,12 @@
 const puppeteer = require('puppeteer-extra');
 const pluginStealth = require('puppeteer-extra-plugin-stealth');
 const pluginAnonymizeUA = require('puppeteer-extra-plugin-anonymize-ua');
+const { createClient } = require('@supabase/supabase-js');
+
+const supabaseUrl = 'https://hmshrixpqeiqnzqiyjql.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhtc2hyaXhwcWVpcW56cWl5anFsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTU4MDM3NDEsImV4cCI6MjAzMTM3OTc0MX0.sEG2Rb6342NHt0-EkRR1eRGigS9frZ2PbTXHTPTl0LE';
+
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 const convertLogic = async (res) => {
   try {
@@ -22,8 +28,11 @@ const convertLogic = async (res) => {
     const page = await browser.newPage();
 
     const url = 'https://convertbetcodes.com/c/free-bet-codes-for-today';
-    await page.goto(url, { waitUntil: 'domcontentloaded' });
+    
+    // Modify navigation options to disable timeout
+    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 0 });
 
+    // Your scraping logic here...
     // Extract pagination content
     const paginationContent = await page.$eval('ul.pagination.pagination-sm.mg-y-20', ul => ul.innerHTML);
 
@@ -98,8 +107,6 @@ const convertLogic = async (res) => {
 
       extractedData.push(...filteredData);
     }
-
-    await browser.close();
 
     if (extractedData.length === 0) {
       return res.status(500).json({ message: 'No new records found' });
