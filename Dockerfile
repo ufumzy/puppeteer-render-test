@@ -10,5 +10,7 @@ RUN npm ci
 COPY . .
 
 # Install puppeteer-extra and required plugins
+RUN npm install puppeteer-extra pu
+
 
 CMD [ "node", "index.js" ]
