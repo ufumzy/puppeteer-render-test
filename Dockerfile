@@ -15,6 +15,9 @@ USER root
 # Install puppeteer-extra and required plugins
 RUN npm install puppeteer-extra puppeteer-extra-plugin-stealth puppeteer-extra-plugin-anonymize-ua
 
+# Install Supabase client library
+RUN npm install @supabase/supabase-js
+
 # Switch back to non-root user for running the application
 USER pptruser
 
