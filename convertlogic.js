@@ -3,8 +3,8 @@ const pluginStealth = require('puppeteer-extra-plugin-stealth');
 const pluginAnonymizeUA = require('puppeteer-extra-plugin-anonymize-ua');
 const { createClient } = require('@supabase/supabase-js');
 
-const supabaseUrl = 'https://hmshrixpqeiqnzqiyjql.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhtc2hyaXhwcWVpcW56cWl5anFsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTU4MDM3NDEsImV4cCI6MjAzMTM3OTc0MX0.sEG2Rb6342NHt0-EkRR1eRGigS9frZ2PbTXHTPTl0LE';
+const supabaseUrl = '#';
+const supabaseKey = '#';
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
@@ -27,7 +27,7 @@ const convertLogic = async (res) => {
 
     const page = await browser.newPage();
 
-    const url = 'https://convertbetcodes.com/c/free-bet-codes-for-today';
+    const url = '#';
     
     // Modify navigation options to disable timeout
     await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 0 });
