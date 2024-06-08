@@ -9,8 +9,13 @@ COPY package*.json ./
 RUN npm ci
 COPY . .
 
-# Install puppeteer-extra and required plugins
-RUN npm install puppeteer-extra pu
+# Switch to root user temporarily to install dependencies
+USER root
 
+# Install puppeteer-extra and required plugins
+RUN npm install puppeteer-extra puppeteer-extra-plugin-stealth puppeteer-extra-plugin-anonymize-ua
+
+# Switch back to non-root user for running the application
+USER pptruser
 
 CMD [ "node", "index.js" ]
